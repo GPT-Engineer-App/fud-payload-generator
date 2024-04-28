@@ -19,7 +19,7 @@ const Index = () => {
             <option value="spyware">Spyware</option>
             <option value="adware">Adware</option>
           </Select>
-          <Button leftIcon={<FaDownload />} colorScheme="teal" mt={4}>
+          <Button leftIcon={<FaDownload />} colorScheme="teal" mt={4} onClick={() => console.log("Payload generation initiated...")}>
             Generate Payload
           </Button>
         </Box>

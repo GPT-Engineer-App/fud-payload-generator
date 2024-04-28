@@ -7,13 +7,13 @@ const NavigationMenu = () => {
 
   return (
     <VStack bg={bg} p={4} borderRadius="md" spacing={4} align="stretch">
-      <Button leftIcon={<FaRobot />} colorScheme="teal" variant="solid" color={color}>
+      <Button leftIcon={<FaRobot />} colorScheme="teal" variant="solid" color={color} onClick={() => console.log("Generating payload...")}>
         Generate Payload
       </Button>
-      <Button leftIcon={<FaRss />} colorScheme="teal" variant="solid" color={color}>
+      <Button leftIcon={<FaRss />} colorScheme="teal" variant="solid" color={color} onClick={() => console.log("Accessing live feed...")}>
         Live Feed
       </Button>
-      <Button leftIcon={<FaShieldAlt />} colorScheme="teal" variant="solid" color={color}>
+      <Button leftIcon={<FaShieldAlt />} colorScheme="teal" variant="solid" color={color} onClick={() => console.log("Displaying defense stats...")}>
         Defense Stats
       </Button>
     </VStack>
